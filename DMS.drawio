@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-14T00:52:14.767Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15" etag="Ewwg0FTPukgW4od9uSaa" version="14.8.6" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-07-14T00:57:32.325Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15" etag="jCI49rEXY6aTc_GxluJS" version="14.8.6" type="github" pages="5">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Process">
     <mxGraphModel dx="1773" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1373,7 +1373,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="FUAFHQFbnWaumuUnXkw7" name="Page-5">
-    <mxGraphModel dx="946" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="8dlF_JcawZEkwu96A2L0-0" />
         <mxCell id="8dlF_JcawZEkwu96A2L0-1" parent="8dlF_JcawZEkwu96A2L0-0" />
@@ -1409,6 +1409,18 @@
         </mxCell>
         <mxCell id="8dlF_JcawZEkwu96A2L0-11" value="DM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="8dlF_JcawZEkwu96A2L0-1">
           <mxGeometry x="680" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8dlF_JcawZEkwu96A2L0-13" value="任务管理&lt;br&gt;负责定时更新任务；&lt;br&gt;收集任务执行数据，提供给抽取管理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8dlF_JcawZEkwu96A2L0-1">
+          <mxGeometry x="50" y="20" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8dlF_JcawZEkwu96A2L0-14" value="抽取管理&lt;br&gt;负责从kafka拉取数据，然后交由调度管理执行；根据任务管理提供的任务执行数据来动态调整消息消费的参数" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8dlF_JcawZEkwu96A2L0-1">
+          <mxGeometry x="280" y="20" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8dlF_JcawZEkwu96A2L0-15" value="调度管理&lt;br&gt;负责数据的暂存，数据处理任务的调度" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8dlF_JcawZEkwu96A2L0-1">
+          <mxGeometry x="489" y="20" width="121" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8dlF_JcawZEkwu96A2L0-16" value="数据处理&lt;br&gt;负责按拓扑结构执行数据处理任务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8dlF_JcawZEkwu96A2L0-1">
+          <mxGeometry x="680" y="20" width="120" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
